@@ -109,14 +109,13 @@ section{
     width: 100%;
     height: 93vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0 30px;
     align-items: center;
     overflow: hidden;
 }
-section .text{
-    flex-basis: 50%;
-}
+
 section .text span{
     font-size: 130px;
     font-weight: 800;
@@ -145,36 +144,28 @@ section .text a{
     color: #b6b3ad;
     margin-top: 40px;
 }
-section .wepar{
-    flex-basis: 50%;
-}
 section .wepar img{
     width: 340px;
     max-width: 100%;
-    transform: translate(80% , 10%) rotate(-30deg);
+    transform: rotate(-30deg);
 }
 @media (max-width:768px) {
-    section{
-        flex-wrap: wrap;
-    }
     section .text span{
         font-size: 80px;
     }
     section .wepar img{
         width: 200px;
-        transform: translate(80% , -10%) rotate(-20deg);
+        transform:  rotate(-20deg);
         }
 @media (max-width:723px){
     section{
         justify-content: center;
-        animation: backwards;
     }
     section .wepar img{
         width: 200px;
-        transform: translate(0% , -10%) rotate(-20deg);
+        transform:  rotate(-20deg);
         }
 }
-
 }
 /* End section  */
 /* start OUR HISTORY  */
@@ -451,10 +442,10 @@ section .wepar img{
    /* hedar logo  */
 @keyframes logo {
     50%{
-        color: #000000;
+        color: #837c7c;
     }
     100%{
-        color: #562B08;
+        color: #7c3d0a;
     }}
     /* icon  */
 @keyframes icon {
